@@ -1,7 +1,11 @@
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
+
 import java.util.logging.*;
 
 public class PasswordChecker {
-    private final static Logger LogPWC = Logger.getLogger( Logger.GLOBAL_LOGGER_NAME );
+    private final static Logger logPWC = LogManager.getLogger(PasswordChecker.class);
 
 
     private boolean lowerCaseCheck=true,upperCaseCheck=true,chara=true,exist=true,number=true,length=true;
@@ -41,6 +45,11 @@ public class PasswordChecker {
         }
         if (number && lowerCaseCheck && length && upperCaseCheck && exist && chara) {
             System.out.println("password meets all requirements");
+        }
+        logPWC.info("This is an info message");
+        logPWC.error("This is an error message");
+        if(logPWC.isDebugEnabled()){
+            logPWC.debug("This is a debug Message");
         }
     }
 

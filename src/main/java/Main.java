@@ -10,10 +10,6 @@ class Main {
         PasswordChecker password = new PasswordChecker();
         password.passwordIsValid("Bello@09");
 
-        logCR.info("This is an info message");
-        logCR.error("This is an Error Log Message");
-        if(logCR.isDebugEnabled()){
-            logCR.debug("This is a debug Message");
-        }
+
     }
 }
