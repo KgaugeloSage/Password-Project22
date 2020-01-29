@@ -1,3 +1,9 @@
  password meets all requirements
+K16:07:23.599 [Test worker] INFO  PasswordChecker - This is an info message
+L16:07:23.604 [Test worker] ERROR PasswordChecker - This is an error message
+K16:07:23.606 [Test worker] DEBUG PasswordChecker - This is a debug Message
 1password should be longer than than 8 characters
 -password should have at least have one digit
+K16:07:23.621 [Test worker] INFO  PasswordChecker - This is an info message
+L16:07:23.622 [Test worker] ERROR PasswordChecker - This is an error message
+K16:07:23.623 [Test worker] DEBUG PasswordChecker - This is a debug Message

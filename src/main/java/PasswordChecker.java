@@ -2,7 +2,7 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 
-import java.util.logging.*;
+
 
 public class PasswordChecker {
     private final static Logger logPWC = LogManager.getLogger(PasswordChecker.class);
